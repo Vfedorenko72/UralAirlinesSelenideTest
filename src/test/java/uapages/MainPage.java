@@ -19,12 +19,6 @@ public class MainPage {
 
     public MainPage(String url) {
         Selenide.open(url);
-    }
-
-    /**
-     * Закрытие модального окна на главной странице
-     */
-    public void firstEntry() {
         modalWindowButton.click();
     }
 
@@ -38,9 +32,10 @@ public class MainPage {
     /**
      * Переход на страницу "Обратная связь" через сендвич
      */
-    public void sandwichFeedback() {
+    public FeedbackPage sandwichFeedback() {
         openSandwich();
         sandwichMenuFeedback.click();
+        return new FeedbackPage();
     }
 
 }
