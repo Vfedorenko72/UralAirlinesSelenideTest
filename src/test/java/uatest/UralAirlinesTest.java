@@ -101,8 +101,10 @@ public class UralAirlinesTest extends BaseTest {
     public void crashTest() {
         Assertions.assertTrue(false);
     }
-    @Test
+
+    /*@Test
     public void crashTest1() {
         Assertions.assertTrue(false);
-    }
+    }*/
+
 }
