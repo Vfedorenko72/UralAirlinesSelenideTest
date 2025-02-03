@@ -96,4 +96,9 @@ public class UralAirlinesTest extends BaseTest {
                 .contains(TITLE_ITINERARY_RECEIPT)
         );
     }
+
+    @Test
+    public void crashTest() {
+        Assertions.assertTrue(false);
+    }
 }
